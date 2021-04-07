@@ -1,0 +1,49 @@
+/**
+ * @section Base Styles
+ */
+
+@import "./normalize";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 125%;
+  width: 100%;
+  min-width: 320px;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+h2 {
+  margin: 0;
+
+}
+
+div,
+p,
+a,
+span {
+  margin: 0;
+}
+
+input,
+textarea,
+select,
+button {
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  background: url('../styles/bg-img.jpeg');
+}

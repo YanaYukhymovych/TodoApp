@@ -1,0 +1,32 @@
+.ui.segment.task__item {
+  display: flex;
+
+  .task__text {
+    position: relative;
+    display: flex;
+    margin: 0 10px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: black;
+      transition: width ease-out 0.1s;
+    }
+
+    &.task__text--done::after {
+      width: 100%;
+    }
+  }
+
+  .task__icon {
+    cursor: pointer;
+
+    &--del {
+      margin-left: auto;
+    }
+  }
+}

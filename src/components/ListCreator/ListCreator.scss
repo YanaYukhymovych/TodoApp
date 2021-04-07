@@ -1,0 +1,48 @@
+div.ui.segment.list-creator {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 10px;
+  flex-grow: 1;
+  margin: 0;
+
+  .list-creator__title {
+    display: flex;
+    align-items: baseline;
+    margin: 50px 0 0 0;
+  }
+
+  .list-creator__catalog {
+    font-size: 18px;
+  }
+}
+
+.title {
+  .title__text {
+    margin: 0 0 0 10px;
+  }
+
+  .pencil.icon.title__icon {
+    margin-left: auto;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+}
+
+.catalog {
+
+  .item {
+    color: grey;
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px !important;
+
+    &:hover {
+      color: black;
+      font-weight: bold;
+      background-color: rgba(234, 234, 234, 0.6);
+      cursor: pointer;
+    }
+  }
+}
+
