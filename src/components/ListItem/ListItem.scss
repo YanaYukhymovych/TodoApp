@@ -1,0 +1,39 @@
+.list-item__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+
+  .list-item__tasks {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 60vh;
+    background-color: #fff;
+
+    @media (max-width: 1024px) {
+      width: 400px;
+    }
+  }
+}
+
+.tasks {
+  .tasks__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  .tasks__creator {
+    input {
+      &:hover {
+        border-color: #85b7d9;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,27 @@
+.ui.segment.task__item {
+  display: flex;
+
+  &:hover {
+    background-color: rgba(234, 234, 234, 0.4);
+  }
+
+  .task__text {
+    position: relative;
+    display: flex;
+    margin: 0 10px;
+
+    &.task__text--done {
+      text-decoration: line-through;
+      color: grey;
+    }
+  }
+
+  .task__icon {
+    cursor: pointer;
+    flex-shrink: 0;
+
+    &--del {
+      margin-left: auto;
+    }
+  }
+}

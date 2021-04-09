@@ -1,10 +1,10 @@
 import React from 'react';
-import './TaskItem.scss';
+import './ListItemTasks.scss';
 import { Icon, Segment } from 'semantic-ui-react';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteTask, doneTask } from '../../store/listsSlice';
 
-const TaskItem = (props) => {
+const ListItemTasks = (props) => {
   const listsState = useSelector((state) => state.listsReducer);
   const dispatch = useDispatch();
 
@@ -25,6 +25,7 @@ const TaskItem = (props) => {
         className={'task__icon'}
         name={task.done ? 'check square outline' : 'square outline'}
         onClick={onDoneTask}
+        color={task.done ? 'grey' : 'black'}
       />
 
       <div
@@ -37,9 +38,10 @@ const TaskItem = (props) => {
         className={'task__icon task__icon--del'}
         name="delete"
         onClick={onDeleteTask}
+        color={task.done ? 'grey' : 'black'}
       />
     </Segment>
   );
 };
 
-export default TaskItem;
+export default ListItemTasks;

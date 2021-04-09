@@ -1,0 +1,27 @@
+.list-title {
+  display: flex;
+  width: 470px;
+  align-items: center;
+  margin: 0;
+
+  .list-title__input {
+    display: flex;
+    width: 100%;
+
+    input {
+      display: flex;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &:hover {
+        border-color: #85b7d9;
+      }
+    }
+  }
+
+
+  @media (max-width: 1024px) {
+    width: 370px;
+  }
+}

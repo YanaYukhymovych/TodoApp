@@ -1,6 +1,121 @@
- .sidebar {
-   display: flex;
-   flex-direction: column;
-   width: 30%;
-   height: 100vh;
- }
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-width: 300px;
+  min-height: 100vh;
+
+  .sidebar__sign-in-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+
+  div.ui.segment.sidebar__list-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+    flex-grow: 1;
+    margin: 0;
+
+    .lists-menu__title {
+      display: flex;
+      align-items: baseline;
+      margin: 50px 0 0 0;
+    }
+
+    .lists-menu__catalog {
+      font-size: 18px;
+    }
+  }
+
+  .sidebar__modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgba(84, 84, 84, 0.5);
+    z-index: 1;
+
+    &.sidebar__modal--open {
+      display: flex;
+    }
+  }
+}
+
+.title {
+  .title__text {
+    margin: 0 0 0 10px;
+  }
+
+  .pencil.icon.title__icon {
+    margin-left: auto;
+    font-size: 1.2em;
+    margin-right: 16px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+}
+
+.catalog {
+  .catalog__list-title {
+    color: grey;
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px !important;
+
+    &:hover {
+      color: black;
+      background-color: rgba(234, 234, 234, 0.4);
+      cursor: pointer;
+    }
+
+    &>div {
+      display: flex;
+    }
+
+    .delete.icon.catalog__list-icon {
+      display: flex;
+      margin: 0 0 0 auto;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.modal {
+
+  .modal__box {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+  }
+
+  .modal__text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  .modal__button {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    width: 100%;
+  }
+}

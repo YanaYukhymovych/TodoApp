@@ -43,7 +43,7 @@ button {
 
 .App {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
-  background: url('../styles/bg-img.jpeg');
+  background: linear-gradient(-45deg, #F0B592, #DD7FB3, #9FC2E4, #23d5ab)
 }

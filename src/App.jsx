@@ -2,13 +2,13 @@ import React  from 'react';
 import './styles/base.scss';
 
 import SideBar from "./components/SideBar/SideBar";
-import ListContent from "./components/ListContent/ListContent";
+import ListItem from "./components/ListItem/ListItem";
 
 function App() {
   return (
     <div className="App">
       <SideBar />
-      <ListContent />
+      <ListItem />
     </div>
   );
 }
